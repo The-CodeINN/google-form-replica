@@ -1,13 +1,14 @@
 import React from 'react';
 import './Header.css';
-import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
+import {MenuIcon, SearchIcon} from '@mui/icons-material';
+//import SearchIcon from '@mui/icons-material/Search';
+
 import { IconButton } from '@mui/material';
 import logo from './images/logo.svg';
 
 function Header() {
   return (
-    <div className='eader'>
+    <div className='header'>
       <div className='header-info'>
         <IconButton>
           <MenuIcon />
@@ -20,8 +21,11 @@ function Header() {
       </div>
       <div className='header-search'>
         <SearchIcon />
+        <input type='text' placeholder='Search' />
       </div>
-      <div className='header-right'></div>
+      <div className='header-right'>
+        <AppsIcon />
+      </div>
     </div>
   );
 }
