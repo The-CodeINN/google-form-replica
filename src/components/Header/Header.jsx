@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
-import { MenuIcon, SearchIcon } from '@mui/icons-material/';
-
+import MenuIcon from '@mui/icons-material/Menu';
+import SearchIcon from '@mui/icons-material/Search';
 import { IconButton } from '@mui/material';
 import logo from './images/logo.svg';
 
