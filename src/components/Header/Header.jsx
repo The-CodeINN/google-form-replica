@@ -1,9 +1,9 @@
 import React from 'react';
 import './Header.css';
-import {MenuIcon, SearchIcon} from '@mui/icons-material';
-//import SearchIcon from '@mui/icons-material/Search';
-
-import { IconButton } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import SearchIcon from '@mui/icons-material/Search';
+import AppsIcon from '@mui/icons-material/Apps';
+import { IconButton, Avatar } from '@mui/material';
 import logo from './images/logo.svg';
 
 function Header() {
@@ -24,7 +24,12 @@ function Header() {
         <input type='text' placeholder='Search' />
       </div>
       <div className='header-right'>
-        <AppsIcon />
+        <IconButton>
+            <AppsIcon />
+        </IconButton >
+        <IconButton>
+            <Avatar src="https://unsplash.com/photos/rDEOVtE7vOs" />
+        </IconButton >
       </div>
     </div>
   );
